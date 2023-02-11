@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/kreisberg/portfolio-page/static/css/main.76038539.css",
-    "main.js": "/kreisberg/portfolio-page/static/js/main.eaeab8af.js",
-    "static/js/787.e7bcab3b.chunk.js": "/kreisberg/portfolio-page/static/js/787.e7bcab3b.chunk.js",
-    "static/media/me.gif": "/kreisberg/portfolio-page/static/media/me.57846ad44149a50e4e91.gif",
-    "static/media/wave.gif": "/kreisberg/portfolio-page/static/media/wave.fc745fa6fac907f9bf75.gif",
-    "static/media/my-bike.gif": "/kreisberg/portfolio-page/static/media/my-bike.89fc4fd914e21a7764e6.gif",
-    "static/media/dot.gif": "/kreisberg/portfolio-page/static/media/dot.aa6cda60f830d5dcc6f9.gif",
-    "static/media/todo-app.gif": "/kreisberg/portfolio-page/static/media/todo-app.f17c5c884367c412e448.gif",
-    "static/media/loading.gif.gif": "/kreisberg/portfolio-page/static/media/loading.gif.e93987e0bb5e0d3fd1e2.gif",
-    "index.html": "/kreisberg/portfolio-page/index.html",
-    "static/media/sign.svg": "/kreisberg/portfolio-page/static/media/sign.d2623d951405d96d7ef594f4e7fcf0f2.svg",
-    "static/media/arrow.svg": "/kreisberg/portfolio-page/static/media/arrow.f4ddbf50214d494d302b378d10645174.svg",
-    "main.76038539.css.map": "/kreisberg/portfolio-page/static/css/main.76038539.css.map",
-    "main.eaeab8af.js.map": "/kreisberg/portfolio-page/static/js/main.eaeab8af.js.map",
-    "787.e7bcab3b.chunk.js.map": "/kreisberg/portfolio-page/static/js/787.e7bcab3b.chunk.js.map"
+    "main.css": "/build/static/css/main.90ad8552.css",
+    "main.js": "/build/static/js/main.04eb6697.js",
+    "static/js/787.e7bcab3b.chunk.js": "/build/static/js/787.e7bcab3b.chunk.js",
+    "static/media/me.gif": "/build/static/media/me.57846ad44149a50e4e91.gif",
+    "static/media/wave.gif": "/build/static/media/wave.fc745fa6fac907f9bf75.gif",
+    "static/media/my-bike.gif": "/build/static/media/my-bike.89fc4fd914e21a7764e6.gif",
+    "static/media/dot.gif": "/build/static/media/dot.aa6cda60f830d5dcc6f9.gif",
+    "static/media/todo-app.gif": "/build/static/media/todo-app.f17c5c884367c412e448.gif",
+    "static/media/loading.gif.gif": "/build/static/media/loading.gif.e93987e0bb5e0d3fd1e2.gif",
+    "index.html": "/build/index.html",
+    "static/media/sign.svg": "/build/static/media/sign.d2623d951405d96d7ef594f4e7fcf0f2.svg",
+    "static/media/arrow.svg": "/build/static/media/arrow.f4ddbf50214d494d302b378d10645174.svg",
+    "main.90ad8552.css.map": "/build/static/css/main.90ad8552.css.map",
+    "main.04eb6697.js.map": "/build/static/js/main.04eb6697.js.map",
+    "787.e7bcab3b.chunk.js.map": "/build/static/js/787.e7bcab3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76038539.css",
-    "static/js/main.eaeab8af.js"
+    "static/css/main.90ad8552.css",
+    "static/js/main.04eb6697.js"
   ]
 }
