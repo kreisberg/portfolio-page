@@ -43,13 +43,13 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer-btn" data-aos="fade" data-aos-duration="1200">
-            <a href="/">Get Started!</a>
+            <a href="#home">Get Started!</a>
           </div>
         </div>
 
         <div className="footer-bottom">
           <div className="footer-bottom--left">
-            <p>Ukraine</p>
+            <p>Ukraine / Denmark</p>
           </div>
           <div className="footer-bottom--right">
             <p>2023</p>
