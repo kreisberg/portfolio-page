@@ -25,9 +25,9 @@ export default function Footer() {
             </div>
 
             <div className="social-links--items">
-              <a href="https://github.com/kreisberg">Github</a>
-              <a href="https://www.linkedin.com/in/anastasiakreisberg/">LinkedIn</a>
-              <a href="mailto:anastasia.kreisberg@yahoo.com">Mail</a>
+              <a href="https://github.com/kreisberg" target="blank">Github</a>
+              <a href="https://www.linkedin.com/in/anastasiakreisberg/" target="blank">LinkedIn</a>
+              <a href="mailto:anastasia.kreisberg@yahoo.com" target="blank">Mail</a>
             </div>
           </div>
 
@@ -37,9 +37,9 @@ export default function Footer() {
             </div>
 
             <div className="social-links--items">
-              <a href="https://wa.me/+380637166926">Whatsapp</a>
-              <a href="https://t.me/kreisberg">Telegram</a>
-              <a href="tel:+380637166926">+38 063 716 6926</a>
+              <a href="https://wa.me/+380637166926" target="blank">Whatsapp</a>
+              <a href="https://t.me/kreisberg" target="blank">Telegram</a>
+              <a href="tel:+380637166926" target="blank">+38 063 716 6926</a>
             </div>
           </div>
           <div className="footer-btn" data-aos="fade" data-aos-duration="1200">
