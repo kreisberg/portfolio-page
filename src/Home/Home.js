@@ -85,7 +85,7 @@ export default function Home() {
         </h1>
         <br />
         <p>
-          <a href='/projects'>
+          <a href='#projects'>
             (just click)
           </a>
         </p>

@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="social-links--items">
               <a href="https://github.com/kreisberg" target="blank">Github</a>
               <a href="https://www.linkedin.com/in/anastasiakreisberg/" target="blank">LinkedIn</a>
-              <a href="mailto:anastasia.kreisberg@yahoo.com" target="blank">Mail</a>
+              <a href="mailto:anastasia.kreisberg@gmail.com" target="blank">Mail</a>
             </div>
           </div>
 

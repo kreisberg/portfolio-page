@@ -196,6 +196,10 @@
     transform-origin: top center;
     animation: move 2s ease infinite;
 
+    @include onMobile {
+      margin-top: 150px;
+    }
+
     & a {
       text-decoration: none;
       color: $colorPink;
