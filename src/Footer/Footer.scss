@@ -1,0 +1,127 @@
+@import '../_Utils/mixins';
+@import '../_Utils/variables';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 150px;
+  height: 500px;
+  background-color: #000;
+  text-transform: uppercase;
+  color: $colorWhite;
+
+  @include onTab {
+    height: 500px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+    z-index: 3;
+
+    @include onTab {
+      flex-wrap: wrap;
+      height: 100%;
+    }
+
+    &--message-for-users {
+      font-size: 14px;
+      margin: 20px;
+
+      @include onTab {
+        display: none;
+      }
+    }
+  }
+
+  &-btn {
+    padding: 70px 35px;
+
+    @include onMobile {
+      padding: 60px 25px;
+    }
+
+    & a, & p {
+      color: $colorWhite;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 5px;
+      border-bottom: 1px solid transparent;
+      animation: none;
+    }
+
+    &--a:hover {
+      border-bottom: 1px solid $colorPink;
+      transition: text-decoration .8s cubic-bezier(.16,1,.3,1);
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @include onTab {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--right {
+      margin-right: 50px;
+
+      @include onTab {
+        margin-right: 0;
+      }
+    }
+
+    &--left {
+      margin-left: 50px;
+
+      @include onTab {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+
+  &--h {
+    margin-bottom: 10px;
+  }
+
+  & a {
+    color: $colorWhite;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+    mix-blend-mode: difference;
+    border-bottom: 1px solid transparent;
+    transition: border .8s cubic-bezier(.16,1,.3,1);
+
+    &:hover {
+      border-bottom: 1px solid $colorPink;
+      transition: text-decoration .8s cubic-bezier(.16,1,.3,1);
+    }
+  }
+
+  &--items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

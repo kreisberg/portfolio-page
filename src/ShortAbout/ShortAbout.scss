@@ -1,0 +1,71 @@
+@import '../_Utils/mixins';
+@import '../_Utils/variables';
+
+.short-about {
+  margin-top: 25vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+
+  &__main {
+    margin-top: 100px;
+    z-index: 3;
+
+    @include onMobile {
+      margin-top: 0;
+    }
+  
+    & h1 {
+      font-weight: 600;
+      font-size: $fontSizeH;
+      text-transform: uppercase;
+      margin-bottom: -150px;
+      text-transform: uppercase;
+      text-align: center;
+
+      @include onTab {
+        font-size: $fontSizeHTab;
+        margin-bottom: -25px;
+      }
+
+      @include onMobile {
+        font-size: $fontSizeHMobile;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__sub-main {
+    margin-top: $marginTop;
+    max-width: 1000px;
+    z-index: 3;
+
+    @include onTab {
+      margin-top: $marginTopTab;
+    }
+
+    @include onMobile {
+      margin-top: $marginTopMobile;
+    }
+
+    & p {
+      text-align: center;
+      color: #f7f8f9;
+      font-weight: 500;
+      font-size: $fontSizeP;
+      max-width: 900px;
+
+      @include onTab {
+        font-size: $fontSizePTab;
+        padding: $paddingTab;
+      }
+
+      @include onMobile {
+        font-size: $fontSizePMobile;
+        padding: $paddingMobile;
+      }
+    }
+  }
+}

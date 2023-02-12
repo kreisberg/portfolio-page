@@ -1,0 +1,86 @@
+@import './_Utils/mixins';
+@import './_Utils/variables';
+
+html, body {
+  height: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #f7f8f9;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  color: #f7f8f9;
+}
+
+.dot {
+  &::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: .2;
+    z-index: 2;
+    pointer-events: none;
+    background: url(./Assets/dot.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.AnimatedCursor {
+  @include onMobile {
+    display: none;
+  }
+}
+
+.loader {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  background-color: #050505;
+
+  @include onMobile {
+    display: none;
+  }
+}
+
+.progress {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+}
+
+#percent {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  margin-bottom: 20px;
+  color: #f7f8f9;
+  font-size: $fontSizeH;
+  font-style: italic;
+}

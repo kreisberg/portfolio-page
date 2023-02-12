@@ -1,0 +1,24 @@
+@import '../_Utils/mixins';
+@import '../_Utils/variables';
+
+.notFoundPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40vh;
+}
+
+.home-link {
+  list-style: none;
+  transition: .6s ease-in-out;
+  transition: display 1s ease-in-out;
+  font-size: $fontSizePTab;
+  color: #f7f8f9;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid #f7f8f9;
+    transition: text-decoration .8s cubic-bezier(.16,1,.3,1);
+  }
+}

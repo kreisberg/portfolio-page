@@ -1,0 +1,171 @@
+@import '../_Utils/mixins';
+@import '../_Utils/variables';
+
+.my-projects {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5vw;
+  border-bottom: 1px dashed #050505;
+
+  @include onTab {
+    height: 30vh;
+    margin-top: 75px;
+  }
+
+  @include onMobile {
+    margin-top: 100px;
+  }
+
+  & h1 {
+    font-weight: 600;
+    font-size: 90px;
+    height: 100%;
+    line-height: 85%;
+    text-transform: uppercase;
+    z-index: 3;
+
+    @include onTab {
+      font-size: $fontSizeHTab;
+    }
+
+    @include onMobile {
+      font-size: $fontSizeHMobile;
+    }
+  }
+}
+
+.project-page {
+  & a {
+    color: $colorWhite;
+    text-decoration: none;
+    z-index: 3;
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    z-index: 3;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    z-index: 3;
+
+    &:last-child {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__item {
+    padding: 100px;
+    width: 400px;
+    transition: transform .6s cubic-bezier(.16,1,.3,1);
+
+    @include onTab {
+      margin-top: 50px;
+      padding: $paddingTab;
+    }
+
+    @include onMobile {
+      height: 300px;
+      margin-top: 150px;
+    }
+
+    &:hover{
+      transform: scale(1.05);
+    }
+
+    &--header {
+      display: flex;
+      width: 100%;
+      align-items: baseline;
+      justify-content: space-between;
+
+      & h1 {
+        font-size: 15px;
+        font-weight: bold;
+        width: 50%;
+        text-transform: uppercase;
+      }
+
+      & p {
+        font-size: $fontSizePTab;
+        font-weight: 500;
+        width: 50%;
+        text-align: right;
+        text-transform: uppercase;
+      }
+    }
+
+    &--image {
+      width: 100%;
+      height: 400px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 10px;
+
+      @include onMobile {
+        margin-top: -50px;
+        background-size: contain;
+      }
+    }
+
+    &--footer {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-top: 5px;
+      padding: 10px 0px;
+
+      @include onMobile {
+        margin-top: -50px;
+      }
+
+      & p {
+        font-size: $fontSizePTab;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      & img {
+        width: 12px;
+        margin-right: 5px;
+        transform: rotate(270deg);
+      }
+    }
+
+    &--image {
+      &-1 {
+        background-image: url(../Assets/my-bike.gif);
+      }
+
+      &-2 {
+        background-image: url(../Assets/todo-app.gif);
+      }
+
+      &-progress {
+        background-image: url(../Assets/loading.gif.gif);
+
+        & p {
+          text-align: center;
+          padding-top: 48%;
+
+          @include onMobile {
+            padding-top: 65%;
+          }
+        }
+      }
+    }
+  }
+}

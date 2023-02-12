@@ -1,0 +1,167 @@
+@import '../_Utils/mixins';
+@import '../_Utils/variables';
+
+.container-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10%;
+  margin-top: 50vh;
+  display: flex;
+  font-weight: 500;
+  font-size: $fontSizeHTab;
+  font-style: italic;
+  height: 100%;
+  line-height: 85%;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  line-height: 90%;
+  text-transform: uppercase;
+  z-index: 3;
+
+  @include onTab {
+    margin-top: 35vh;
+    font-size: $fontSizeHTab;
+  }
+
+  @include onMobile {
+    font-size: $fontSizeHMobile;
+  }
+
+  &container-name p {
+    overflow: hidden;
+  }
+}
+
+.container-quote {
+  position: absolute;
+  font-size: $fontSizePTab;
+  color: #f7f8f9;
+  word-spacing: 10px;
+  font-weight: 300;
+  z-index: 3;
+
+  @include onTab {
+    font-size: $fontSizePTab;
+  }
+
+  @include onMobile {
+    max-width: 80vw;
+    font-size: $fontSizePTab;
+  }
+
+  &--1 {
+    position: absolute;
+    top: 70vh;
+    right: 50px;
+    width: 350px;
+
+    @include onTab {
+      right: 5%;
+    }
+
+    @include onMobile {
+      top: 110vh;
+      right: 10%;
+    }
+  }
+
+  &--2 {
+    position: absolute;
+    top: 150vh;
+    left: 10%;
+    width: 500px;
+
+    & a {
+      list-style: none;
+      transition: .6s ease-in-out;
+      transition: display 1s ease-in-out;
+      font-size: $fontSizePTab;
+      color: $colorPink;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 1px solid $colorPink;
+        transition: text-decoration .8s cubic-bezier(.16,1,.3,1);
+      }
+    }
+
+    @include onTab {
+      top: 130vh;
+    }
+
+    @include onMobile {
+      top: 125vh;
+    }
+  }
+}
+
+.container-image {
+  position: absolute;
+  top: 70vh;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  width: 35vw;
+  height: 100vh;
+  background: url(../Assets/me.gif) 50% 50% no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  z-index: 2;
+
+  @include onTab {
+    height: 65vh;
+  }
+
+  @include onMobile {
+    width: 60vw;
+    right: 30%;
+  }
+}
+
+.about-container2 {
+  position: absolute;
+  top: 200vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  flex-direction: column;
+  z-index: 3;
+
+  @include onTab {
+    top: 220vh;
+  }
+
+  &--heading {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+
+  &--heading p {
+    font-weight: 600;
+    font-size: 120px;
+    text-transform: uppercase;
+    height: 100%;
+    line-height: 25%;
+
+    @include onTab {
+      font-size: $fontSizeHTab;
+      line-height: 50%;
+      margin-bottom: 100px;
+    }
+
+    @include onMobile {
+      font-size: $fontSizeHMobile;
+    }
+  }
+}
+
+.about-footer {
+  margin-top: 350vh;
+}
