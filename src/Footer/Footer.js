@@ -39,7 +39,7 @@ export default function Footer() {
             <div className="social-links--items">
               <a href="https://wa.me/+380637166926" target="blank">Whatsapp</a>
               <a href="https://t.me/kreisberg" target="blank">Telegram</a>
-              <a href="tel:+380637166926" target="blank">+38 063 716 6926</a>
+              <a href="tel:+380637166926" target="blank">Call me</a>
             </div>
           </div>
           <div className="footer-btn" data-aos="fade" data-aos-duration="1200">
