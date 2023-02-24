@@ -54,41 +54,7 @@ export default function App() {
   })
   return (
     <div>
-    {/* <Router>
-    <div className="dot"></div>
-    <div className="App">
-    <div class="loader" ref={(el) => (loader = el)}>
-      <div class="progress" ref={(el) => (progress = el)}>
-        <div id="percent" ref={(el) => (percent = el)}>
-          1%
-        </div>
-      </div>
-    </div>
-    <AnimatedCursor
-      innerSize={9}
-      outerSize={70}
-      color='255, 255, 255'
-      outerAlpha={0.2}
-      innerScale={0.7}
-      outerScale={1.2}
-    />
-    <ScrollToTop />
-      <Switch>
-        <Route path="/" exact><Home /></Route>
-      </Switch>
-      <Switch>
-        <Route path="/about" exact><About /></Route>
-      </Switch>
-      <Switch>
-        <Route path="/projects" exact><Projects /></Route>
-      </Switch>
-      <Switch>
-        <Route path="/contact" exact><Contact /></Route>
-      </Switch>
-    </div>
-    </Router> */}
-
-  <HashRouter>
+    <HashRouter>
     <div className="dot"></div>
     <div className="App">
     <div class="loader" ref={(el) => (loader = el)}>
@@ -121,7 +87,7 @@ export default function App() {
         <Route path="/contact" exact><Contact /></Route>
       </Route>
       {/* <Route>
-        <Route path="*" exact><NotFoundPage /></Route>
+        <Route path="*"><NotFoundPage /></Route>
       </Route> */}
     </div>
     </HashRouter>
