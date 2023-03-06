@@ -6,7 +6,6 @@ import Home from './Home/Home';
 import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
-// import NotFoundPage from './NotFoundPage/NotFoundPage';
 import ScrollToTop from './ScrollToTop/ScrollToTop';
 import gsap from 'gsap';
 
@@ -86,9 +85,6 @@ export default function App() {
       <Route>
         <Route path="/contact" exact><Contact /></Route>
       </Route>
-      {/* <Route>
-        <Route path="*"><NotFoundPage /></Route>
-      </Route> */}
     </div>
     </HashRouter>
     </div>

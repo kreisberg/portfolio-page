@@ -36,7 +36,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="call-buton">
-        <a href="tel:+380637166926" class="call-button--btn">Call Me!</a>
+        <a href="tel:+4542959666" class="call-button--btn">Call Me!</a>
       </div>
       <Footer />
     </div>

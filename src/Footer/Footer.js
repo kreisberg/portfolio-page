@@ -37,9 +37,9 @@ export default function Footer() {
             </div>
 
             <div className="social-links--items">
-              <a href="https://wa.me/+380637166926" target="blank">Whatsapp</a>
+              <a href="https://wa.me/+4542959666" target="blank">Whatsapp</a>
               <a href="https://t.me/kreisberg" target="blank">Telegram</a>
-              <a href="tel:+380637166926" target="blank">Call me</a>
+              <a href="tel:+4542959666" target="blank">Call me</a>
             </div>
           </div>
           <div className="footer-btn" data-aos="fade" data-aos-duration="1200">
@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <div className="footer-bottom--left">
-            <p>Ukraine / Denmark</p>
+            <p>Copenhagen, Denmark</p>
           </div>
           <div className="footer-bottom--right">
             <p>2023</p>
